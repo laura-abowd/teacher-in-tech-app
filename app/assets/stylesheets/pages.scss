@@ -1,3 +1,75 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// color variables
+$peach: hsl(28, 76%, 92%);
+$blue: hsl(227, 18%, 39%);
+$orange: hsl(8, 100%, 75%);
+
+// Typography
+$Raleway: 'Raleway', sans-serif;
+//font-weight: 300, 400;
+$sofia: 'Sofia', cursive;
+
+
+body {
+  margin: 0;
+  font-family: $Raleway;
+  font-weight: 300;
+  background-color: $peach;
+  color: $blue;
+}
+
+.quote {
+  font-family: $sofia;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+  width: 50%;
+  border: 1px dotted $orange;
+  padding: 32px 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.header__p {
+  margin: 0 25px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.container__text {
+  background-color: $orange;
+  text-align: center;
+  width: 180px;
+  height: 120px;
+  margin: 0 40px 50px 40px;
+}
+
+footer {
+  color: $peach;
+  background: $blue;
+  bottom: 0;
+  height: 2rem;
+}
