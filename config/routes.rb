@@ -1,5 +1,9 @@
+#routes
+
 Rails.application.routes.draw do
   root to: 'pages#home'
-  # get 'home', to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # creating a route for our contact--
+  # get 'index', to: 'contact#index'
+  get 'contact', to: 'pages#home'
+  resources :contact, only: [:index, :new, :create]
 end

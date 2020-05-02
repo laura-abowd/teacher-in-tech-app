@@ -1,0 +1,11 @@
+<%= form_for @contact, url: contact_path do |form| %>
+<div class="col-md-6" >
+  <%= form.label :name %><br>
+  <%= form.text_field :name, required: true, class: "contact-form-text-area" %><br>
+  <%= form.label :email %><br>
+  <%= form.text_field :email %><br>
+  <%= form.label :message %><br>
+  <%= form.text_area :message, required: true, class: "contact-form-text-area" %>
+  <%= form.submit 'Send Message', class: "btn btn-primary" %>
+  </div>
+<% end %>
