@@ -4,19 +4,20 @@
 <section>
   <div class="header">
     <%= image_tag "profile_image3.jpg", class:"avatar" %>
-    <p class="header__p">Teacher turned developer, I have a passion for helping others. </p>
+    <p class="header__p">Teacher turned developer, I have a passion for helping others. I've been an elementary school teacher for ten years and have taught both first and second grade. Although teaching is my passion, I've transitioned into helping people in the classroom, to help others over the web.</p>
   </div>
 </section>
-<section>
-  <div class="container">
-    <div class="container__text"></div>
-    <div class="container__text"></div>
-    <div class="container__text"></div>
+<section class="steps_container">
+  <div class="steps_container--grid" >
+    <div class="container__text">Assess<br><i class="far fa-clipboard fa-4x"></i></div>
+    <div class="container__text">Schedule<br><i class="far fa-calendar-alt fa-4x"></i></div>
+    <div class="container__text">Learn<br><i class="fas fa-chalkboard-teacher fa-4x"></i></div>
   </div>
 </section>
-<section>
+<section class="contact_form_container">
+  <div class="contact_form">
   <h3>Contact to schedule an appointment!</h3>
+  <%= render 'contact/contact_form' %>
+</div>
 </section>
 
-<!-- render _contact_form.html.erb below -->
-<%= render 'contact/contact_form' %>
