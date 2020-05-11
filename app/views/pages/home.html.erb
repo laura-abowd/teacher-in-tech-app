@@ -1,24 +1,40 @@
-<p>root#pages</p>
-<header class="quote">"Think and wonder, wonder and think."</header>
-
+<!-- <p>root#pages</p> -->
+<header class="header__home">
+  <h1>Welcome! Class is in session. </h1>
+  <h2>Online lessons from a certified teacher.</h2>
+</header>
 <section>
-  <h1 class="h1__home">Howdy! I'm Laura, aka Mrs. Abowd.</h1>
   <div class="hero">
     <%= image_tag "profile_image3.jpg", class:"avatar" %>
+    <div>
+    <h3>Mrs. Abowd provides tutoring to your little ones.</h3>
     <p class="hero__p">Teacher turned developer, I have a passion for helping others. I've been an elementary school teacher for ten years and have taught both first and second grade. Although teaching is my passion, I've transitioned into helping people in the classroom, to help others over the web.</p>
+    </div>
   </div>
 </section>
 <section class="steps_container cursor">
   <div class="steps_container--grid" >
-    <div class="container__text">Assess<br><i class="far fa-clipboard fa-4x"></i></div>
-    <div class="container__text">Schedule<br><i class="far fa-calendar-alt fa-4x"></i></div>
-    <div class="container__text">Learn<br><i class="fas fa-chalkboard-teacher fa-4x"></i></div>
+    <div class="paint-splash-img">
+      <%= image_tag "paint-splash-1.svg", class:"image" %>
+      <div class="steps__text">Assess<br><i class="far fa-clipboard fa-3x"></i></div>
+    </div>
+    <div class="paint-splash-img">
+      <%= image_tag "paint-splash-2.svg", class:"image" %>
+       <div class="steps__text">Schedule<br><i class="far fa-calendar-alt fa-3x"></i></div>
+    </div>
+    <div class="paint-splash-img">
+      <%= image_tag "paint-splash-3.svg", class:"image" %>
+       <div class="steps__text">Learn<br><i class="fas fa-chalkboard-teacher fa-3x"></i></div>
+    </div>
   </div>
 </section>
 <section class="contact_form_container">
   <div class="contact_form">
-  <h3>Contact to schedule an appointment!</h3>
-  <%= render 'contact/contact_form' %>
-</div>
+    <h3>Contact to schedule an appointment!</h3>
+    <%= render 'contact/contact_form' %>
+  </div>
 </section>
+<div class="quote">
+  "Think and wonder, wonder and think."
+</div>
 

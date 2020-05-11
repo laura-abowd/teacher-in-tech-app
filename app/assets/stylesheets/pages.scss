@@ -2,17 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// color variables
-$peach: hsl(28, 76%, 92%);
-$blue: hsl(227, 18%, 39%);
-$orange: hsl(8, 100%, 75%);
-
-// Typography
-$Raleway: 'Raleway', sans-serif;
-//font-weight: 300, 400;
-$sofia: 'Sofia', cursive;
-
-
 body {
   margin: 0;
   font-family: $Raleway;
@@ -20,6 +9,14 @@ body {
   background-color: $peach;
   color: $blue;
 }
+
+.header__home {
+  background-color: $blue;
+  color: $peach;
+  text-align: center;
+  border: 1px dotted $orange;
+}
+
 
 .quote {
   font-family: $sofia;
@@ -53,7 +50,6 @@ body {
   text-align: center;
   margin: 50px auto;
   width: 50%;
-  border: 1px dotted $orange;
   padding: 32px 0;
 }
 
@@ -77,14 +73,20 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   justify-content: center;
-  grid-column-gap: 1rem;
+  grid-column-gap: 1.5rem;
 }
 
-.container__text {
-  background-color: $orange;
-  text-align: center;
-  width: 100%;
-  margin-bottom:50px;
+.paint-splash-img {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.steps__text {
+  position: absolute;
+
 }
 
 .contact_form_container {
@@ -97,6 +99,7 @@ body {
 .contact_form {
   display: grid;
   justify-content: center;
+  margin: 100px 0;
   :hover {
     cursor: url("pencil.png"), pointer ;
   }
@@ -113,9 +116,11 @@ body {
   margin-bottom: 0px;
 }
 
+
 footer {
   color: $peach;
   background: $blue;
   bottom: 0;
-  height: 2rem;
+  height: 3rem;
 }
+
