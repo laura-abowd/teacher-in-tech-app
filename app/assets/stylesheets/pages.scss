@@ -13,10 +13,9 @@ body {
 .header__home {
   background-color: $blue;
   color: $peach;
+  height: 200px;
   text-align: center;
-  border: 1px dotted $orange;
 }
-
 
 .quote {
   font-family: $sofia;
@@ -30,6 +29,9 @@ body {
   max-width: 100%;
   color: $blue;
   margin: 24px 0;
+  background-color: $blue;
+  color: $peach;
+  height: 200px;
     :visited {
       color: $blue;
   }
@@ -43,6 +45,7 @@ body {
 .h1__home {
   text-align: center;
 }
+
 .hero {
   display: flex;
   justify-content: center;
@@ -79,18 +82,19 @@ body {
 .paint-splash-img {
   position: relative;
   display: grid;
-  justify-content: center;
   align-items: center;
   justify-items: center;
 }
 
 .steps__text {
   position: absolute;
-
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.contact_form_container {
-  width: 50%;
+.contact_form_section {
+  width: 60%;
+  height: 400px;
   margin: 0 auto;
   background-color: $blue;
   color: $peach;
@@ -100,6 +104,7 @@ body {
   display: grid;
   justify-content: center;
   margin: 100px 0;
+
   :hover {
     cursor: url("pencil.png"), pointer ;
   }
@@ -115,7 +120,6 @@ body {
   margin-top: 18px;
   margin-bottom: 0px;
 }
-
 
 footer {
   color: $peach;
