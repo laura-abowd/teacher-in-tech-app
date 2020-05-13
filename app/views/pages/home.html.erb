@@ -1,38 +1,41 @@
 <!-- <p>root#pages</p> -->
+<!-- <div class="container"> -->
 
-<section class="hero-section">
-  <div class="hero">
-    <h3>Mrs. Abowd provides tutoring to your little ones.</h3>
-    <%= image_tag "profile_image3.jpg", class:"avatar" %>
-    <div>
-    <p class="hero__p">Teacher turned developer, I have a passion for helping others. I've been an elementary school teacher for ten years and have taught both first and second grade. Although teaching is my passion, I've transitioned into helping people in the classroom, to help others over the web.</p>
-    </div>
-  </div>
-</section>
-<section class="steps_container cursor">
+<section class="steps_container col-lg-8 cursor">
   <div class="steps_container--grid" >
     <div class="paint-splash-img">
       <%= image_tag "paint-splash-1.svg", class:"image" %>
-      <div class="steps__text">Assess</div>
+      <div class="steps__text">Schedule</div>
     </div>
     <div class="paint-splash-img">
       <%= image_tag "paint-splash-2.svg", class:"image" %>
-       <div class="steps__text">Schedule</div>
+       <!-- <div class="steps__text"> -->
+        <%= link_to "Tutorials", tutorials_path, class: "steps__text"%>
+       <!-- Tutorials</div> -->
     </div>
     <div class="paint-splash-img">
       <%= image_tag "paint-splash-3.svg", class:"image" %>
-       <div class="steps__text">Learn</div>
+       <div class="steps__text">Contact</div>
     </div>
   </div>
 </section>
-<section class="contact_form_section">
+<section class="hero-section ">
+
+  <div class="hero col-lg-6 shadow rounded">
+      <h3 class="hero__h3">Mrs. Abowd provides tutoring to your little ones.</h3>
+      <%= image_tag "profile_img_sm.jpg", class:"avatar" %>
+    <p class="hero__p">Teacher turned developer, I have a passion for helping others. I've been an elementary school teacher for ten years and have taught both first and second grade. Although teaching is my passion, I've transitioned into helping people in the classroom, to help others over the web.</p>
+  </div>
+</section>
+
+<section class="contact_form_section col-lg-8">
   <div class="contact_form">
     <h3>Contact to schedule an appointment!</h3>
     <%= render 'contact/contact_form' %>
   </div>
 </section>
 <div class="quote">
-  "Think and wonder, wonder and think."
-  -Dr. Seuss
+  "Think and wonder,<br> wonder and think."
+  <div class="quote__name">-Dr. Seuss</div>
 </div>
-
+<!-- </div> -->

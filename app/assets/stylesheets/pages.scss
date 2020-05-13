@@ -1,6 +1,12 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+* {
+margin:0;
+padding:0;
+}
 
 body {
   margin: 0;
@@ -10,49 +16,84 @@ body {
   color: $blue;
 }
 
-.header__home {
-  text-align: center;
-}
 
 .quote {
-  font-family: $sofia;
+  font-family: $grover;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
+.quote__name {
+  font-family: $Raleway;
+  margin-bottom: 50px;
+}
 .nav-bar {
   max-width: 100%;
-  margin: 24px 0;
-  background-color: $blue;
   color: $peach;
-  height: 200px;
+  height: 250px;
   margin-top: 0;
+  // position: relative;
+}
+
+.nav-bar::before {
+  content: "";
+  background-image: url('background-img.jpg');
+  background-repeat: none;
+  background-position: center;
+  position: absolute;
+  opacity: .75;
+  width: 100%;
+  height: 250px;
 }
 
 .nav-bar__links {
     display: flex;
     justify-content: flex-end;
-
+    position: relative;
 }
 
 .nav_link {
-  padding: 18px 32px;
+  padding: 18px 24px;
   text-transform: uppercase;
-   color: $peach;
+  color: $peach;
 }
 
 .h1__home {
+  position: relative;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #EC5656;
+  font-size: 3rem;
+
+}
+
+.hero-section  {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-position: center;
+  margin-top: 150px;
+  // width: 100%;
 }
 
 .hero {
-  display: flex;
+  background-color: $peach;
+  display: grid;
+  grid-template-columns: 30% 70%;
   justify-content: center;
   align-items: center;
+  justify-items: center;
+  column-gap: 10px;
+  row-gap: 16px;
+  margin: 0 auto;
+  height: 350px;
+}
+
+.hero__h3 {
+  grid-column:  1 / span 2;
   text-align: center;
-  margin: 50px auto;
-  width: 50%;
-  padding: 32px 0;
+  font-size: 2rem;
 }
 
 .avatar {
@@ -61,13 +102,8 @@ body {
   height: 200px;
 }
 
-.hero__p {
-  margin: 0 25px;
-}
-
 .steps_container {
-  width: 50%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .steps_container--grid {
@@ -83,6 +119,7 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
+  color: $peach;
 }
 
 .steps__text {
@@ -92,10 +129,8 @@ body {
 }
 
 .contact_form_section {
-  width: 60%;
-  height: 400px;
   margin: 0 auto;
-  background-color: $blue;
+  background-color: #094B87;
   color: $peach;
 }
 
@@ -103,10 +138,7 @@ body {
   display: grid;
   justify-content: center;
   margin: 100px 0;
-
-  :hover {
-    cursor: url("pencil.png"), pointer ;
-  }
+  padding: 24px;
 }
 
 .contact-form-text-area {
