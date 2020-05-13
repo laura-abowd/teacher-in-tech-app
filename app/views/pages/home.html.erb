@@ -15,7 +15,8 @@
     </div>
     <div class="paint-splash-img">
       <%= image_tag "paint-splash-3.svg", class:"image" %>
-       <div class="steps__text">Contact</div>
+       <!-- <div class="steps__text">Contact</div> -->
+       <%= link_to "Contact", contact_path(@contact, :anchor => "form"), class: "steps__text" %>
     </div>
   </div>
 </section>
