@@ -8,12 +8,14 @@ margin:0;
 padding:0;
 }
 
-body {
+body,
+html {
   margin: 0;
   font-family: $Raleway;
   font-weight: 300;
   background-color: $peach;
   color: $blue;
+  scroll-behavior: smooth;
 }
 
 .quote {
