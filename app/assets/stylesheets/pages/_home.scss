@@ -23,7 +23,7 @@ html {
   font-weight: bold;
   text-align: center;
   font-size: 3rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 1px;
 }
 
 .quote__name {
@@ -44,7 +44,7 @@ html {
 
 .nav-bar::before {
   content: "";
-  background-image: url('background-img.jpg');
+  background-image: image-url('background-img.jpg');
   background-repeat: none;
   background-position: center;
   position: absolute;
