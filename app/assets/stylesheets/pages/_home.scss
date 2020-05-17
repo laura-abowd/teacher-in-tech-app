@@ -38,31 +38,31 @@ html {
   width: 100%;
   height: 75px;
   background-color: $blue;
-}
-
-.nav-bar__links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+   overflow: hidden;
+   z-index: 1;
 }
 
 .nav_link {
-  padding: 18px 32px;
   text-transform: uppercase;
   color: $peach;
   font-size: 1.5rem;
   font-weight: 600;
+  padding: 0 32px;
 }
 
 .header__image {
   color: $peach;
-  margin-top: 0;
   background-image: image-url('background-img.jpg');
   background-color: $blue;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .75;
+  height: 326px;
 }
 
 // .nav-bar::before {
@@ -95,7 +95,7 @@ html {
 
 .hero {
   background-color: #FEFAF6;
-  border-radius: 8px;
+  border-radius: 999px 0px 0px 999px;
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
@@ -103,14 +103,15 @@ html {
   height: 350px;
 }
 
-.hero__content-h3 {
-  // font-size: 2rem;
+.hero__content {
+  padding-right: 50px;
+  font-weight: bolder;
 }
 
 .profile-img {
   border-radius: 50%;
-  border: solid 5px $blue;
   height: 200px;
+  border: solid 8px $blue;
   justify-self: center;
 }
 
@@ -120,15 +121,16 @@ html {
 
 .steps_container--grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
-  justify-content: center;
   grid-column-gap: 1.5rem;
+  margin: 0 auto;
 }
 
 .paint-splash-img {
   position: relative;
   display: grid;
+  justify-content: center;
   align-items: center;
   justify-items: center;
   color: $peach;
@@ -140,17 +142,13 @@ html {
   font-weight: bold;
 }
 
-.contact_form_section {
-  margin: 0 auto;
-  background-color: #094B87;
-  color: $peach;
-}
-
 .contact_form {
+  background-color: $yellow;
+  color: $blue;
   display: grid;
   justify-content: center;
-  margin: 100px 0;
-  padding: 24px;
+  margin: 100px auto;
+  // padding: 24px;
 }
 
 .contact-form-text-area {
