@@ -1,6 +1,6 @@
 <!-- <p>root#pages</p> -->
 <!-- <div class="container"> -->
-  <h1 class="h1__home">Online lessons from<br>a certified teacher.</h1>
+
 <section class="steps_container col-lg-8 cursor">
   <div class="steps_container--grid" >
     <div class="paint-splash-img">
@@ -21,15 +21,17 @@
   </div>
 </section>
 <section class="hero-section ">
+  <div class="hero col-lg-8">
+    <%= image_tag "profile_img_sm.jpg", class:"profile-img" %>
+    <div class="hero__content">
+      <h3 class="hero__content-h3">Meet Mrs. Abowd</h3>
+      <p class="hero__content-p">Teacher turned developer, I have a passion for helping others. I've been an elementary school teacher for ten years and have taught both first and second grade. Although teaching is my passion, I've transitioned into helping people in the classroom, to help others over the web.</p>
+    </div>
 
-  <div class="hero col-lg-6 shadow rounded">
-      <h3 class="hero__h3">Mrs. Abowd provides tutoring to your little ones.</h3>
-      <%= image_tag "profile_img_sm.jpg", class:"avatar" %>
-    <p class="hero__p">Teacher turned developer, I have a passion for helping others. I've been an elementary school teacher for ten years and have taught both first and second grade. Although teaching is my passion, I've transitioned into helping people in the classroom, to help others over the web.</p>
   </div>
 </section>
 
-<section class="contact_form_section col-lg-6">
+<section class="contact_form_section col-lg-8">
   <div class="contact_form">
     <h3>Contact to schedule an appointment!</h3>
     <%= render 'contact/contact_form' %>
