@@ -117,6 +117,9 @@ html {
 
 .steps_container {
   margin: 60px auto;
+  h3 {
+    text-align: center;
+  }
 }
 
 .steps_container--grid {
@@ -148,7 +151,6 @@ html {
   display: grid;
   justify-content: center;
   margin: 100px auto;
-  // padding: 24px;
 }
 
 .contact-form-text-area {
@@ -164,7 +166,7 @@ html {
 
 footer {
   color: $peach;
-  background: $blue;
+  background: $pink;
   bottom: 0;
   height: 3rem;
 }
