@@ -1,36 +1,41 @@
 <div class="container">
-<section class="hero-section ">
-  <div class="hero col-xl-12">
-    <%= image_tag "profile-img-sm.png", class:"profile-img" %>
-    <div class="hero__content">
-      <h3 class="hero__content-h3">Meet Mrs. Abowd</h3>
-      <p class="hero__content-p">Teacher turned developer, I have a passion for helping others. I've been an elementary school teacher for ten years and have taught both first and second grade. Although teaching is my passion, I've transitioned into helping people in the classroom, to help others over the web.</p>
+  <section class="hero-section ">
+    <div class="hero col-xl-12">
+      <%= image_tag "profile-img-sm.png", class:"profile-img" %>
+      <div class="hero__content">
+        <h3 class="hero__content-h3">Meet Mrs. Abowd</h3>
+        <p class="hero__content-p">Teacher turned developer, I have a passion for helping others. I've been an elementary school teacher for ten years and have taught both first and second grade. I've transitioned from helping students in the classroom, to helping students over the web.</p>
+      </div>
     </div>
-
-  </div>
-</section>
-<section class="steps_container cursor">
-  <h3 class="steps_container-h3">Mrs. Abowd provides two learning options to get your student to the next level:</h3>
-  <div class="steps_container--grid col-xl-12" >
-    <div class="paint-splash-img col-lg-4">
-      <%= image_tag "paint-splash-1.svg", class:"image" %>
-      <div class="steps__text">Schedule</div>
+  </section>
+  <section class="steps_container cursor">
+    <h3 class="steps_container-h3">I provide two learning options to assist your child with their education:</h3>
+    <div class="steps_container--grid col-xl-12">
+      <div class="paint-splash-img col-lg-4">
+        <%= image_tag "paint-splash-2.svg", class:"image" %>
+        <div class="steps__text">
+          <p>Private 30 minute tutoring sessions</p>
+          <%= link_to "Learn More", tutorials_path,class: "learn_more-link"%>
+        </div>
+      </div>
+      <div class="paint-splash-img col-lg-4">
+        <%= image_tag "paint-splash-1.svg", class:"image" %>
+        <div class="steps__text">
+          <p>Access to online learning resources</p>
+          <p class="learn_more-link">Learn More</p>
+        </div>
+      </div>
     </div>
-    <div class="paint-splash-img col-lg-4">
-      <%= image_tag "paint-splash-2.svg", class:"image" %>
-        <%= link_to "Tutorials", tutorials_path,class: "steps__text"%>
+  </section>
+  <section class="contact_form_section  ">
+    <div class="contact_form col-xl-12">
+      <h3>Not sure where to start?</h3>
+      <p>Contact to schedule an appointment!</p>
+      <%= render 'contact/contact_form' %>
     </div>
+  </section>
+  <div class="quote">
+    "Think and wonder,<br> wonder and think."
+    <div class="quote__name">-Dr. Seuss</div>
   </div>
-</section>
-<section class="contact_form_section  ">
-  <div class="contact_form col-xl-12">
-    <h3>Not sure where to start?</h3>
-    <p>Contact to schedule an appointment!</p>
-    <%= render 'contact/contact_form' %>
-  </div>
-</section>
-<div class="quote">
-  "Think and wonder,<br> wonder and think."
-<div class="quote__name">-Dr. Seuss</div>
-</div>
 </div>
