@@ -55,7 +55,7 @@ html {
   padding: 0 32px;
 }
 
-.header__image {
+.nav__image {
   color: $peach;
   background-image: image-url('background-img.jpg');
   background-color: $blue;
@@ -63,21 +63,20 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 326px;
+  position: relative;
 }
 
-// .nav-bar::before {
-  // content: "";
-  // background-image: image-url('background-img.jpg');
-  // background-color: $blue;
-  // background-attachment: fixed;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // position: absolute;
-  // opacity: .75;
-  // width: 100%;
-  // height: 100%;
-// }
+.nav__header {
+  background-color: $blue;
+  width: 800px;
+  height: 150px;
+  color: $peach;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: 175px;
+}
 
 .h1__home {
   position: relative;
@@ -90,7 +89,7 @@ html {
 }
 
 .hero-section  {
-  margin-top: 80px;
+  margin-top: 180px;
 }
 
 .hero {
@@ -140,9 +139,11 @@ html {
 }
 
 .steps__text {
+  color: $blue;
   position: absolute;
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .contact_form {
