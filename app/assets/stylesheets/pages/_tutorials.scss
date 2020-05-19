@@ -1,0 +1,12 @@
+.circle-yellow {
+  height: 100px;
+  width: 100px;
+  background-color: $yellow;
+  border-radius: 50%;
+}
+
+.resources-container {
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-around;
+}
