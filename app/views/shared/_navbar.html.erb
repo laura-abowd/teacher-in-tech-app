@@ -4,12 +4,18 @@
   </div>
   <div class="nav-bar__links">
     <%= link_to "Contact", contact_path(@contact,:anchor => "form"), class: "nav_link" %>
+
     <% if user_signed_in? %>
     <%= link_to('Logout',destroy_user_session_path, method: :delete, class: "nav_link") %>
     <% else %>
     <%= link_to('Login', new_user_session_path, class: "nav_link") %>
     <% end %>
+
+
   </div>
 </nav>
-<div class="header__image jumbotron">
+<div class="nav__image jumbotron">
+  <div class="nav__header">
+
+  </div>
 </div>
