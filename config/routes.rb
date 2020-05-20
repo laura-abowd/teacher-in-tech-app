@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # creating a route for our contact--
   # get 'index', to: 'contact#index'
   get 'contact', to: 'pages#home'
-  get 'tutorials', to: 'pages#tutorials'
+  get 'tutoring', to: 'pages#tutoring'
+  get 'resources', to: 'pages#resources'
   resources :contact, only: [:index, :new, :create]
 end

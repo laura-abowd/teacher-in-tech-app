@@ -1,0 +1,33 @@
+.hero-tutorials {
+  margin-top: 180px;
+}
+
+.circle-container {
+  display: grid;
+  .tutoring__h2 {
+    margin-top: 48px;
+    font-weight: 600;
+  }
+}
+
+.circle-yellow {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background-color: $yellow;
+  border-radius: 50%;
+}
+
+.resources-container {
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.number {
+    position: absolute;
+    font-size: 100px;
+    font-weight: 600;
+    left: calc(50% - 20px/2);
+    top: calc(50% - 120px/2);
+}

@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 * {
-margin:0;
-padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 body,
@@ -43,8 +43,8 @@ html {
   align-items: center;
   position: sticky;
   top: 0;
-   overflow: hidden;
-   z-index: 1;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .nav_link {
@@ -88,7 +88,7 @@ html {
   color: $blue;
 }
 
-.hero-section  {
+.hero-section {
   margin-top: 180px;
 }
 
@@ -116,6 +116,7 @@ html {
 
 .steps_container {
   margin: 60px auto;
+
   h3 {
     text-align: center;
   }
@@ -144,6 +145,14 @@ html {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+}
+
+.learn_more-link:hover {
+      text-decoration: none;
+  background: linear-gradient(-45deg, transparent 40%, $blue 0, $blue 60%, transparent 0) 0 1em,
+    linear-gradient(45deg, transparent 40%, $blue 0, $blue 60%, transparent 0) .1em 1em;
+  background-repeat: repeat-x;
+  background-size: .2em .1em;
 }
 
 .contact_form {
@@ -175,4 +184,3 @@ footer {
   bottom: 0;
   height: 3rem;
 }
-

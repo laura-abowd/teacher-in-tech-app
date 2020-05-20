@@ -2,11 +2,14 @@
 
 class PagesController < ApplicationController
 
+
   def home
    @contact = Contact.new(params[:contact])
   end
 
-  def tutorials
+  def tutoring
   end
 
+  def resources
+  end
 end
