@@ -1,5 +1,10 @@
+.header {
+  font-size: 1.5rem;
+  margin-top: 120px;
+}
+
 .hero-tutorials {
-  margin-top: 180px;
+  margin-top: 80px;
 }
 
 .circle-container {
@@ -18,16 +23,38 @@
   border-radius: 50%;
 }
 
-.resources-container {
-  margin: 32px 0;
+.flex-container {
   display: flex;
   justify-content: space-around;
+  margin: 32px 0;
 }
 
 .number {
-    position: absolute;
-    font-size: 100px;
+  position: absolute;
+  font-size: 100px;
+  font-weight: 600;
+  left: calc(50% - 20px/2);
+  top: calc(50% - 120px/2);
+}
+
+.tutoring__h3 {
+  font-weight: 600;
+}
+
+.flex-container__pricing {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 0;
+  h4 {
+    margin-top: 48px;
     font-weight: 600;
-    left: calc(50% - 20px/2);
-    top: calc(50% - 120px/2);
+  }
+}
+
+.number__pricing {
+  position: absolute;
+  font-size: 72px;
+  font-weight: 600;
+  left: calc(50% - 36px/2);
+  top: calc(50% - 72px/2);
 }
