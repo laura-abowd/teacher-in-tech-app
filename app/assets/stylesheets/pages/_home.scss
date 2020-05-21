@@ -18,20 +18,30 @@ html {
   scroll-behavior: smooth;
 }
 
-.quote {
+
+.splash-blue-lg {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  & .quote__author {
+    font-family: $Raleway;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+}
+
+.quote__text {
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  color: $yellow;
   font-family: $grover;
   font-weight: bold;
   text-align: center;
   font-size: 3rem;
   letter-spacing: 1px;
-}
-
-.quote__name {
-  font-family: $Raleway;
-  font-weight: lighter;
-  margin-bottom: 50px;
-  letter-spacing: 0;
-  font-size: 2rem;
 }
 
 .nav-bar {
@@ -89,7 +99,7 @@ html {
 }
 
 .hero-section {
-  margin-top: 180px;
+  margin: 100px 0;
 }
 
 .hero {
