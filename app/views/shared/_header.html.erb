@@ -1,0 +1,15 @@
+
+<div class="nav__image jumbotron">
+  <div class="nav__header-blue">
+    <% if current_page?(root_path) %>
+      <div class="nav__header-content">
+      <h1 class="nav__header-h1 bold700 ">Welcome! Class is in session.</h1>
+      <p class="semibold600">Online lessons from a certified teacher specializing in Kindergarten through 5th Grade.</p>
+      </div>
+      <% elsif current_page?(tutoring_path) %>
+      <h1>Private Tutoring</h1>
+      <% elsif current_page?(resources_path) %>
+      <h1>Learning Resources</h1>
+    <% end %>
+  </div>
+</div>

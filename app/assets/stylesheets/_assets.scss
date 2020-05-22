@@ -6,7 +6,24 @@ $pink: hsl(359, 91%, 82%);
 $yellow: hsl(50, 90%, 65%);
 
 // Typography
+//font-weight: 400, 600, 700;
 $Raleway: 'Raleway', sans-serif;
-//font-weight: 300, 400;
-
 $grover: 'Irish Grover', cursive;
+
+// Raleway
+.regular400 {
+  font-weight: 400
+}
+
+.semibold600 {
+  font-weight: 600
+}
+
+.bold700 {
+  font-weight: 700
+}
+
+
+.width100 {
+  width: 100%;
+}
