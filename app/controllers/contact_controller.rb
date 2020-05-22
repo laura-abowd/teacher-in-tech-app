@@ -11,7 +11,6 @@ class ContactController < ApplicationController
     @contact.request = request
     respond_to do |format|
       if @contact.deliver
-
         @contact = Contact.new
         format.html { render 'pages/home'}
         format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
