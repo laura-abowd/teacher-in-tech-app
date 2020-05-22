@@ -1,3 +1,4 @@
+
 <%= form_for @contact, url: contact_path do |form| %>
 <div class="form-group " id="form">
   <div class="contact_information__container row">
@@ -14,6 +15,8 @@
     <div class="col-xl-12">
       <%= form.label :message, class: "form_label" %><br>
       <%= form.text_area :message, required: true,  size: "30x5", class: "contact-form-text-area" %>
+    </div>
+    <div class="col-xl-6">
       <%= form.submit 'Send Message', class: "btn btn__form " %>
     </div>
   </div>

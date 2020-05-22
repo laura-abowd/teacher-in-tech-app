@@ -1,5 +1,12 @@
 .btn__form {
+  font-weight: 700;
   margin-top: 8px;
   background-color: $blue;
+  color: $peach;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.btn__form:hover {
   color: $peach;
 }
