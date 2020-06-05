@@ -1,0 +1,29 @@
+.resources-list {
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+
+.container-worksheets {
+  display: flex;
+}
+
+.worksheets__grid {
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 18px;
+}
+
+.images-worksheets {
+  grid-row: 1 / 4;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 18px;
+}

@@ -27,3 +27,65 @@ $grover: 'Irish Grover', cursive;
 .width100 {
   width: 100%;
 }
+
+// <--- h1, h2, h3, h4, h5, h6 --->
+.header__text-h1 {
+  text-align: center;
+
+}
+
+// .header__text-h2
+
+// .header__text-h3
+
+// .header__text-h4
+
+// .header__text-h5
+
+// .header__text-h6
+
+
+// <--- header image/content --->
+.nav__image {
+  background-image: image-url('background-img.jpg');
+  background-color: $blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  position: relative;
+}
+
+.nav__header-blue {
+  background-color: $blue;
+  width: 800px;
+  height: 150px;
+  color: $peach;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  // margin-top: 0px;
+}
+
+.nav__image-home {
+  background-image: image-url('background-img.jpg');
+  background-color: $blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+
+.nav__header-blue-home {
+  background-color: $blue;
+  width: 800px;
+  height: 200px;
+  color: $peach;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: 200px;
+  text-align: center;
+
+}
