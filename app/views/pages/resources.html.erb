@@ -1,32 +1,33 @@
 <%= render partial: "shared/header" %>
-<div class="container">
-  <h2 class="header__text-h2 col-xl-12 mt-auto">I provide the following set of free online learning resources that can help supplement your child’s learning at home:</h2>
-  <div class="resources-list col-xl-10">
+<div class="container margin-top-100">
+  <h2 class="header__text-h2 col-xl-12">I provide the following set of free online learning resources that can help supplement your child’s learning at home:</h2>
+  <div class="resources-list mt-3 col-xl-10">
     <ul>
       <li>printable worksheets and activities</li>
       <li>video lessons</li>
       <li>educational content</li>
     </ul>
   </div>
-  <p class="col-xl-12">Check out these free resources below:</p>
-    <h3 class="header__text-h3 ">Worksheets and activities</h3>
+  <h3 class="col-xl-12 mt-3 ">Check out these free resources below:</h3>
+  <h3 class="header__text-h3 col-xl-12 margin-top-50 ">Worksheets and activities</h3>
   <div class="container-worksheets col-xl-12">
-  <div class="worksheets__grid">
-    <%= image_tag "plantsb&w_img.jpg", class:"images-worksheets" %>
-    <p>Subject:<br>Kindergarten - 2nd grade Science</p>
-    <p>What do plants need? After watching the video, "Plants- It's Alive!", download and print the 'What Plants Need' workheet.</p>
-    <%= link_to "Download 'What Plants Need (B&W)'", "pdf/Plants_B&W.pdf", skip_pipeline: true%>
+    <div class="worksheets__grid">
+      <%= image_tag "plantsb&w_img.jpg", class:"images-worksheets" %>
+      <p>Subject:<br>Kindergarten - 2nd grade Science</p>
+      <p>Directions: What do plants need? After watching the video, "Plants- It's Alive!", download and print the 'What Plants Need' worksheet.</p>
+      <%= link_to "Download 'What Plants Need (B&W)'", "pdf/Plants_B&W.pdf", skip_pipeline: true%>
+       <%= link_to "Download 'What Plants Need (Color)'", "pdf/Plants_Color.pdf", skip_pipeline: true%>
+    </div>
+    <div class="worksheets__grid">
+      <%= image_tag "plantsb&w_img.jpg", class:"images-worksheets" %>
+      <p>Subject:<br>Kindergarten - 2nd grade Science</p>
+      <p>Directions: What do plants need? After watching the video, "Plants- It's Alive!", download and print the 'What Plants Need' worksheet.</p>
+      <%= link_to "Download 'What Plants Need (B&W)'", "pdf/Plants_B&W.pdf"%>
+      <%= link_to "Download 'What Plants Need (Color)'", "pdf/Plants_Color.pdf", skip_pipeline: true%>
+    </div>
   </div>
-  <div class="worksheets__grid">
-    <%= image_tag "plantsb&w_img.jpg", class:"images-worksheets" %>
-    <p>Subject:<br>Kindergarten - 2nd grade Science</p>
-
-    <p>What do plants need? After watching the video, "Plants- It's Alive!", download and print the 'What Plants Need' workheet.</p>
-    <%= link_to "Download 'What Plants Need (B&W)'", "pdf/Plants_B&W.pdf"%>
-  </div>
- </div>
-  <h3 class="header__text-h3 ">Video Lessons</h3>
-  <div class="videos col-xl-12">
+  <h3 class="header__text-h3 margin-top-50 col-xl-12">Video Lessons</h3>
+  <div class="videos col-xl-12 ">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/EhIFS9T7dNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/EhIFS9T7dNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/EhIFS9T7dNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

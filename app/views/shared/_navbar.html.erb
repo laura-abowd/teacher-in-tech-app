@@ -3,7 +3,7 @@
     <%= link_to "Home", root_path, class: "nav_link semibold600" %>
   </div>
   <div class="nav-bar__links">
-    <%= link_to "Contact", contact_path(@contact,:anchor => "form"), class: "nav_link semibold600" %>
+    <%= link_to "Contact", contact_index_path, class: "nav_link semibold600" %>
 
     <% if user_signed_in? %>
     <%= link_to('Logout',destroy_user_session_path, method: :delete, class: "nav_link") %>

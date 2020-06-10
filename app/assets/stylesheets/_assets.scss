@@ -7,21 +7,15 @@ $yellow: hsl(50, 90%, 65%);
 
 // Typography
 //font-weight: 400, 600, 700;
-$Raleway: 'Raleway', sans-serif;
-$grover: 'Irish Grover', cursive;
+$Raleway: 'Raleway',
+sans-serif;
+$grover: 'Irish Grover',
+cursive;
 
 // Raleway
-.regular400 {
-  font-weight: 400
-}
-
-.semibold600 {
-  font-weight: 600
-}
-
-.bold700 {
-  font-weight: 700
-}
+$regular400: 400;
+$semibold600: 600;
+$bold700: 700;
 
 
 .width100 {
@@ -31,14 +25,19 @@ $grover: 'Irish Grover', cursive;
 // <--- h1, h2, h3, h4, h5, h6 --->
 .header__text-h1 {
   text-align: center;
+  font-weight: $bold700;
 
 }
 
-// .header__text-h2
+// .header__text-h2 {
+
+// }
 
 // .header__text-h3
 
-// .header__text-h4
+.header__text-h4 {
+  font-weight: $semibold600;
+}
 
 // .header__text-h5
 
@@ -64,7 +63,10 @@ $grover: 'Irish Grover', cursive;
   position: absolute;
   left: 50%;
   margin-left: -400px;
-  // margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav__image-home {
@@ -87,5 +89,21 @@ $grover: 'Irish Grover', cursive;
   margin-left: -400px;
   margin-top: 200px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+// margin & padding
+.align-center {
+  text-align: center;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
 }

@@ -9,7 +9,7 @@ body,
 html {
   margin: 0;
   font-family: $Raleway;
-  font-weight: 300;
+  font-weight: $regular400;
   background-color: $peach;
   color: $blue;
   scroll-behavior: smooth;
@@ -64,7 +64,7 @@ html {
 }
 
 .hero-section {
-  margin: 150px 0;
+  margin-top: 150px;
 }
 
 .hero {
@@ -78,8 +78,12 @@ html {
 }
 
 .hero__content {
-  padding-right: 50px;
-  font-weight: bolder;
+  padding: 0 32px;
+   justify-self: center;
+  font-weight: $semibold600;
+  .hero__content-p {
+    font-size: 1.25rem;
+  }
 }
 
 .profile-img {
@@ -89,20 +93,11 @@ html {
   justify-self: center;
 }
 
-.steps_container {
-  margin: 60px auto;
-
-  h3 {
-    text-align: center;
-  }
-}
-
 .steps_container--grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   grid-column-gap: 1.5rem;
-  margin: 0 auto;
 }
 
 .paint-splash-img {
@@ -118,7 +113,7 @@ html {
   color: $blue;
   position: absolute;
   font-size: 1.5rem;
-
+  font-weight: $bold700;
 }
 
 .learn_more-link{
@@ -137,7 +132,7 @@ html {
   padding: 64px 0;
   font-size: 1.5rem;
   h3 {
-    font-weight: 600;
+    font-weight: $semibold600;
     font-size: 3rem;
   }
 }
@@ -145,14 +140,14 @@ html {
 .contact-form-text-area {
   width: 100%;
   border-radius: 4px;
-  border: 2px solid $blue;
+  border: 4px solid $blue;
   background-color: #FBF0B6;
 }
 
 .form_label {
   margin-top: 18px;
   margin-bottom: 0px;
-  font-weight: bold;
+  font-weight: $bold700;
 }
 
 #footer {

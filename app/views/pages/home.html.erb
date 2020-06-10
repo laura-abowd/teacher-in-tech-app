@@ -1,11 +1,11 @@
 <div class="nav__image-home jumbotron">
   <div class="nav__header-blue-home">
-    <h1 class="header__text-h1">Welcome! Class is in session.</h1>
-    <p>Online lessons from a certified teacher specializing in Kindergarten through 5th Grade.</p>
+      <h1 class="header__text-h1">Welcome! Class is in session.</h1>
+      <p>Online lessons from a certified teacher specializing in Kindergarten through 5th Grade.</p>
   </div>
 </div>
 
-<div class="container">
+<div class="container ">
   <section class="hero-section ">
     <div class="hero col-xl-12">
       <%= image_tag "profile-img-sm.png", class:"profile-img" %>
@@ -15,12 +15,12 @@
       </div>
     </div>
   </section>
-  <section class="steps_container cursor">
-    <h3 class="steps_container-h3">I provide two learning options to assist your child with their education:</h3>
-    <div class="steps_container--grid col-xl-12">
+  <section class="cursor">
+    <h3 class="steps_container-h3 align-center margin-top-50">I provide two learning options to assist your child with their education:</h3>
+    <div class="steps_container--grid margin-top-50 mx-auto col-xl-12">
       <div class="paint-splash-img col-xl-4">
         <%= image_tag "paint-splash-2.svg", class:"image" %>
-        <div class="steps__text bold700">
+        <div class="steps__text">
           <p class="width100">Private 30 minute tutoring sessions</p>
           <%= link_to "Learn More", tutoring_path,class: "learn_more-link"%>
         </div>
@@ -34,7 +34,7 @@
       </div>
     </div>
   </section>
-  <section class="contact_form_section col-xl-12 ">
+  <section class="contact_form_section margin-top-100 col-xl-12 ">
     <div class="contact_form-yellow col-xl-8">
       <h3>Not sure where to start?</h3>
       <p>Contact to schedule an appointment! We'll work together to develop a custom learning plan.</p>
