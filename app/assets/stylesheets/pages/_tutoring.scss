@@ -5,7 +5,7 @@
 }
 
 .circle-container {
-    display: grid;
+    // display: grid;
   .tutoring__h2 {
     margin-top: 48px;
     font-weight: $semibold600;
@@ -42,7 +42,7 @@
 
 .dotted-line {
   margin: 0 8px;
-  width: 30%;
+  width: 150px;
   align-self: center;
   border-color: $blue;
   border-width: 2px;
