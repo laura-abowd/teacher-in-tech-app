@@ -40,23 +40,6 @@
   display: flex;
 }
 
-.dotted-line {
-  margin: 0 8px;
-  width: 150px;
-  align-self: center;
-  border-color: $blue;
-  border-width: 2px;
-  border-style: dashed none none none;
-}
-
-.dotted-line-100 {
-  width: 100%;
-  align-self: center;
-  border-color: $blue;
-  border-width: 2px;
-  border-style: dashed none none none;
-}
-
 .tutoring__h3 {
   font-weight: 600;
 }
@@ -71,7 +54,6 @@
     display: flex;
     margin: 32px 0;
   h4 {
-    // margin-top: 48px;
     font-weight: $semibold600;
   }
 }

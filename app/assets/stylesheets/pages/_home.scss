@@ -30,7 +30,8 @@ html {
   color: $peach;
   font-family: $grover;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 48px;
+  font-size: 3vw;
   letter-spacing: 1px;
 }
 
@@ -114,6 +115,7 @@ html {
   position: absolute;
   font-size: 1.5rem;
   font-weight: $bold700;
+  text-align: center;
 }
 
 .learn_more-link{
