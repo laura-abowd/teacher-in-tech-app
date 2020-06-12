@@ -31,7 +31,7 @@ html {
   font-family: $grover;
   text-align: center;
   font-size: 48px;
-  font-size: 3vw;
+  font-size: 3.5vw;
   letter-spacing: 1px;
 }
 
@@ -110,10 +110,11 @@ html {
   color: $peach;
 }
 
-.steps__text {
+.learn_more-text {
   color: $blue;
   position: absolute;
   font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: $bold700;
   text-align: center;
 }
@@ -152,6 +153,7 @@ html {
   font-weight: $bold700;
 }
 
+
 #footer {
   color: $blue;
   background: $pink;
@@ -161,13 +163,15 @@ html {
   justify-content: space-between;
   align-items: center;
   ul {
-      display: flex;
-      list-style-type: none;
-      margin: 0;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
     }
 }
 
-.footer__li,
-.copyright {
-  padding: 0 24px;
+@media only screen and (max-width: 800px) {
+  .quote__text {
+    font-size: 18px;
+    font-size: 4vw;
+  }
 }
