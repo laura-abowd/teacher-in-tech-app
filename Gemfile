@@ -29,7 +29,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'simple_form'
 gem 'devise'
 gem 'omniauth-google-oauth2'
-gem 'dotenv-rails', groups: [:development, :test]
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
