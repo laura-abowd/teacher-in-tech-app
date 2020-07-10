@@ -106,20 +106,35 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
-config.action_mailer_default_url_options = { host: 'http://teacherinteach.io' }
-Rails.application.routes.default_url_options[:host] = 'http://teacherintech.io'
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.perform_deliveries = true
-config.action_mailer.raise_delivery_errors = false
-config.action_mailer.default charset: 'utf-8'
-config.action_mailer.smtp_settings = {
-  address: 'smtp.gmail.com'
-  port: 587
-  domain: 'gmail.com'
-  authentication: 'plain'
-  enable_starttls_auto: true
-  user_name: ENV['GMAIL_USERNAME']
-  password: ENV['GMAIL_PASSWORD']
-}
+# config.action_mailer_default_url_options = { host: 'http://teacherinteach.io' }
+# config.action_mailer.delivery_method = :smtp
+# Rails.application.routes.default_url_options[:host] = 'http://teacherintech.io'
+# config.action_mailer.delivery_method = :smtp
+# config.action_mailer.perform_deliveries = true
+# config.action_mailer.raise_delivery_errors = false
+# config.action_mailer.default charset: 'utf-8'
+# config.action_mailer.smtp_settings = {
+#   address: 'smtp.gmail.com'
+#   port: 587
+#   domain: 'gmail.com'
+#   authentication: 'plain'
+#   enable_starttls_auto: true
+#   user_name: ENV['GMAIL_USERNAME']
+#   password: ENV['GMAIL_USERNAME']
+# }
+
+  config.action_mailer.default_url_options = { host: 'https://your app.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+  :user_name => ENV['GMAIL_USERNAME'],
+  :password => ENV['GMAIL_USERNAME'],
+  :domain => 'gmail.com',
+  :address => 'smtp.gmail.com',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+  }
+
 
 end
