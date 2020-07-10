@@ -123,7 +123,7 @@ Rails.application.configure do
 #   password: ENV['GMAIL_USERNAME']
 # }
 
-  config.action_mailer.default_url_options = { host: 'http://teacherintech.io' }
+  config.action_mailer.default_url_options = { host: 'http://teacherintech.io/contact' }
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
