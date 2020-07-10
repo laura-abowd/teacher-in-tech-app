@@ -9,6 +9,7 @@ class ContactController < ApplicationController
    def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
+
     if @contact.deliver
       flash[:notice] = "Mesage has been sent!"
       redirect_to root_path
